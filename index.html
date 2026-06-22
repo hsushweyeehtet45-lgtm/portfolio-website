@@ -575,10 +575,11 @@
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
-      #hero { grid-template-columns: 1fr; padding-top: 4rem; gap: 1.5rem; }
+      #hero { grid-template-columns: 1fr; padding-top: 4rem; gap: 1.2rem; }
       .hero-right { order: -1; }
       .photo-wrap { width: 260px; height: 280px; }
-      .photo-wrap::before {display: none;}
+      .photo-wrap::before,
+      .photo_wrap::after{display: none;}
       .photo-img { width: 220px; height: auto; }
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .about-stats { grid-template-columns: 1fr 1fr; }
