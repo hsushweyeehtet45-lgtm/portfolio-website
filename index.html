@@ -6,7 +6,6 @@
   <title>Hsu Shwe Yee Htet — UI/UX & Web Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%237C5CBF'/><text y='68' x='50' text-anchor='middle' font-size='52' font-family='serif' font-weight='900' fill='white'>H</text></svg>"/>
-  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -286,7 +285,7 @@
 .photo-bg-blob, .photo-badge, .photo-badge2 { display: none; }
 
     /* SECTIONS */
-    section { padding: 3.5rem 5%; max-width: 1360px; margin: 0 auto; }
+    section { padding: 4.5rem 5%; max-width: 1360px; margin: 0 auto; }
     .section-eyebrow {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem; color: var(--purple);
@@ -576,12 +575,10 @@
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
-      #hero { grid-template-columns: 1fr; padding-top: 1rem; gap: 1.2rem; }
+      #hero { grid-template-columns: 1fr; padding-top: 6rem; gap: 2.5rem; }
       .hero-right { order: -1; }
-      .photo-wrap { width: 260px; height: 280px; }
-      .photo-wrap::before,
-      .photo-wrap::after{display: none;}
-      .photo-img { width: 220px; height: auto; }
+      .photo-wrap { width: 260px; height: 320px; }
+      .photo-img { width: 230px; height: 310px; }
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .about-stats { grid-template-columns: 1fr 1fr; }
 
@@ -603,7 +600,7 @@
     }
 
     @media (max-width: 420px) {
-      section { padding: 2.5rem 6%; }
+      section { padding: 3.5rem 6%; }
       .projects-grid, .skills-grid { gap: 1rem; }
       .hero-ctas { gap: 0.7rem; }
       .btn-primary, .btn-outline { padding: 0.65rem 1.4rem; font-size: 0.82rem; }
@@ -641,7 +638,7 @@
       padding: 1rem 1.2rem 1.2rem;
     }
     .cert-title {
-      font-family: 'Space Grotesk', serif;
+      font-family: 'Playfair Display', serif;
       font-weight: 700; font-size: 0.95rem;
       color: var(--text); margin-bottom: 0.3rem;
     }
@@ -698,16 +695,16 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left">
-    
+    <div class="hero-eyebrow">UI/UX • WEB DEVELOPMENT</div>
     <h1>Hsu Shwe Yee Htet</h1>
-    <div class="hero-role">Technology & Design Enthusiast</div>
+    <div class="hero-role">UI/UX Designer & Web Developer</div>
     <p class="hero-desc">
-Creating intuitive digital experiences through thoughtful UI/UX design and responsive web development.
+Turning ideas into intuitive digital experiences through thoughtful design and modern web technologies. I bridge the gap between design and development by creating user-centered interfaces and responsive web applications.
 </p>
     <div class="hero-ctas">
   <a href="#projects" class="btn-outline">View Projects</a>
 
-  <a href="assets/CV.pdf" class="btn-outline" target="_blank" rel="noopener noreferrer">
+  <a href="assets/CV.pdf" class="btn-outline" download>
     Download CV
   </a>
 
@@ -772,9 +769,31 @@ Creating intuitive digital experiences through thoughtful UI/UX design and respo
   </div>
 </div>
 
-    <div class="project-card reveal">
+<div class="project-card reveal">
       <div class="project-image">
         <span class="project-number">02</span>
+        <img src="assets/project-hotelpulse.png" alt="HotelPulse AI dashboard analytics screenshot" loading="lazy">
+      </div>
+      <div class="project-color-bar"></div>
+      <div class="project-top">
+        <div class="project-title">HotelPulse AI — Hotel Performance Intelligence Platform</div>
+        <p class="project-desc">AI-powered hotel performance dashboard built with Next.js, TypeScript, and Tailwind CSS, pulling live weekly KPIs from Google Sheets. Generates AI-written performance reports and automates personalized owner emails through Next.js API Routes.</p>
+        <div class="project-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">Google Sheets API</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <a href="https://hotelpulse-ai-dashboard.vercel.app/" class="project-link" target="_blank">↗ Live Demo</a>
+        <a href="https://github.com/hsushweyeehtet45-lgtm" class="project-link" target="_blank">↗ GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-image">
+        <span class="project-number">03</span>
         <img src="assets/project-asap.jpg" alt="ASAP delivery website desktop screenshot" loading="lazy">
       </div>
       <div class="project-color-bar"></div>
@@ -799,7 +818,7 @@ Creating intuitive digital experiences through thoughtful UI/UX design and respo
 
     <div class="project-card reveal">
       <div class="project-image">
-        <span class="project-number">03</span>
+        <span class="project-number">04</span>
        <img src="assets/project-golf.png" class="golf-image" alt="Golf Membership app mobile screens" loading="lazy">
          </div>
       <div class="project-color-bar"></div>
@@ -818,6 +837,8 @@ Creating intuitive digital experiences through thoughtful UI/UX design and respo
         <a href="https://github.com/hsushweyeehtet45-lgtm" class="project-link" target="_blank">↗ GitHub</a>
       </div>
     </div>
+
+    
 
   </div>
 </section>
@@ -994,7 +1015,7 @@ Creating intuitive digital experiences through thoughtful UI/UX design and respo
           <div class="stat-label">RSU Hackathon 2025</div>
         </div>
         <div class="stat-box">
-          <div class="stat-num">3+</div>
+          <div class="stat-num">4</div>
           <div class="stat-label">Projects</div>
         </div>
         <div class="stat-box">
@@ -1010,48 +1031,19 @@ Creating intuitive digital experiences through thoughtful UI/UX design and respo
   </div>
 </section>
 
-    <!-- CONTACT -->
-
+<!-- CONTACT -->
 <section id="contact">
-  <div class="section-eyebrow" style="justify-content:center;">Let's Connect</div>
-
+  <div class="section-eyebrow" style="justify-content:center;">Let's connect</div>
   <h2>Get in Touch</h2>
-
   <p>
-    Interested in UI/UX design, web development, and technology-driven projects.
-    Open to collaboration, internships, and new opportunities.
-  </p>
-
+Interested in UI/UX design, web development, and technology-driven projects. Feel free to reach out for collaboration or opportunities.
+</p>
   <div class="contact-links">
-
-<a href="mailto:hsushweyeehtet45@gmail.com" class="contact-link">
-  <i class="fas fa-envelope"></i> Email
-</a>
-
-<a href="https://www.linkedin.com/in/hsushweyeehtet"
-   class="contact-link"
-   target="_blank"
-   rel="noopener noreferrer">
-  <i class="fab fa-linkedin"></i> LinkedIn
-</a>
-
-<a href="https://github.com/hsushweyeehtet45-lgtm"
-   class="contact-link"
-   target="_blank"
-   rel="noopener noreferrer">
-  <i class="fab fa-github"></i> GitHub
-</a>
-
-<a href="tel:+66634107741" class="contact-link">
-  <i class="fas fa-phone"></i> Phone
-</a>
-
-<a href="https://line.me/ti/p/9qQRD3iIPw"
-   class="contact-link"
-   target="_blank"
-   rel="noopener noreferrer">
-  <i class="fab fa-line"></i> Line
-</a>
+    <a href="mailto:hsushweyeehtet45@gmail.com" class="contact-link">Email</a>
+    <a href="tel:+66634107741" class="contact-link">+66 63 410 7741</a>
+    <a href="https://www.linkedin.com/in/hsushweyeehtet" class="contact-link" target="_blank">LinkedIn</a>
+    <a href="https://line.me/ti/p/9qQRD3iIPw" class="contact-link" target="_blank">Line</a>
+    <a href="https://github.com/hsushweyeehtet45-lgtm" class="contact-link" target="_blank">⌥ GitHub</a>
   </div>
 </section>
 
